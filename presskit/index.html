@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>羽·士</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/1.2.0/css/uikit.gradient.min.css" rel="stylesheet" type="text/css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid">
+				<div id="navigation" class="uk-width-medium-1-4">
+					<h1 class="nav-header">羽士</h1>
+					<a class="nav-header" href="#">RedFeather</a>
+                    
+                    <hr>
+                    
+                    <div class="uk-width-medium-2-6">
+							<h2 id="factsheet">信息</h2>
+							<p>
+								<strong>网站：</strong><br/>
+								<a href="https://axelpln.rthe.xyz">axelpln.rthe.xyz</a>
+							</p>
+							<p>
+								<strong>邮箱：</strong><br/>
+								<a href="mailto:axelpln@outlook.com">axelpln@outlook.com</a>
+							</p>        
+							<p>
+								<strong>社交网站</strong><br/>
+                                <a href="http://i.youku.com/i/UNjE1MzQ0Mjk1Ng==?spm=a2hzp.8253869.0.0">Youku</a></br>
+                                <a href="http://space.bilibili.com/295220553">bilibili</a></br>
+                                <a href="https://weibo.com/6375918999">Weibo</a></br>
+                                <a href="https://axelpln.lofter.com/">Lofter</a></br>
+                                <a href="https://twitter.com/AxelplnRF">Twiter</a></br>
+                                <a href="https://www.facebook.com/huang.axel.35">Facebook</a></br>
+                            </p>
+							<p>
+                                <strong>地址:</strong><br/>
+                                Quanzhou, Fujian
+                            </p> 
+							<p>
+								<strong>电话：</strong><br/>
+								183****8581
+							</p>
+						</div>
+				</div>
+				<div id="content" class="uk-width-medium-3-4"><img src="images/header.png" class="header">					<div class="uk-grid">
+						<div class="uk-width-medium-4-6">
+                            <h2 id="description"><strong>自我介绍</strong></h2>
+							<p>
+                              一个生在种花家福建泉州的苦逼初中生，技术小白。对于代码基本不会create只会copy，HTML代码至少能看懂一点，C++嘛......唉，废了。<br/>
+                              喜欢在无聊的时候搞一些看似很无聊，实则更无聊的东西。
+							</p>
+						</div>
+					</div>
+
+					<hr>
+
+					<p><a href="http://dopresskit.com/">presskit()</a> by Rami Ismail (<a href="http://www.vlambeer.com/">Vlambeer</a>) - also thanks to <a href="credits.html">these fine folks</a></p>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.js"></script>		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				var container = $('.images');
+
+				container.imagesLoaded( function() {
+					container.masonry({
+						itemSelector: '.uk-width-medium-1-2',
+					});
+				});
+			});
+		</script>	</body>
+</html>

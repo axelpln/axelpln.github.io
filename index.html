@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>羽士的小站</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="" />
+      <meta name="keywords" content=" "/>
+      <meta name="author" content="PolarNight">
+      <meta name="robots" content="index, follow" />
+
+      <script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto')
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+</script>
+
+   </head>
+   <body>
+      <!--Card-->
+      <div class="card animated fadeIn">
+         <center><img class="center animated rollIn" src="logo.png" alt="avatar"></center>
+         <hr>
+         <div class="name">
+            羽士
+         </div>
+         <p class="subtitle" id="hitokoto">:D 获取中...</p>
+         <p class="location"><i class="fa fa-map-marker"> </i><a href="presskit/"> My Presskit</a>
+         </p>
+         <p class="icons animated pulse">
+            <a href="https://twitter.com/thEgTSnrigjRNrd" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+            </a>
+            <a href="https://www.facebook.com/huang.axel.35" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-3x fa-stack-2x"></i>     
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+            </a>
+            <a href="#" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x"></i>
+            </span>
+            </a>
+            <a href="#" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x"></i>
+            </span>
+            </a>
+            <a href="https://github.com/axelpln" target="_blank">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+            </a>
+         </p>
+      </div>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         &copy; 2020. RedFeather. <br/>The wedsite template is made by Shrinath Nayak.<br/>
+          The background image is provided by <a href="https://rthsoftware.cn/">RTH Software</a>'s <a href="https://bing.rthe.net">Bing Wallpaper API</a>.
+      </footer>
+   </body>
+</html>
